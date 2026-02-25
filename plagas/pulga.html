@@ -1,244 +1,89 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pulgas | Bugs Or Us PR</title>
 
-  <title>Pulga | Bugs Or Us PR</title>
-  <meta name="description" content="Información básica sobre pulgas en Puerto Rico: cómo identificarlas, señales en mascotas y hogar, riesgos, prevención y control profesional." />
-
-  <style>
-    body{
-      margin:0;
-      font-family: Arial, Helvetica, sans-serif;
-      background:#ffffff;
-      color:#1b1b1b;
-      line-height:1.65;
-    }
-    header{
-      background: linear-gradient(to right, #2e7d32, #43a047);
-      color:#fff;
-      padding:18px 16px;
-      text-align:center;
-      position:relative;
-    }
-    header h1{
-      margin:0;
-      font-size:22px;
-      letter-spacing:0.2px;
-    }
-    header p{
-      margin:6px 0 0 0;
-      font-size:14px;
-      opacity:0.95;
-      font-weight:600;
-    }
-
-    .top-actions{
-      display:flex;
-      gap:10px;
-      justify-content:center;
-      flex-wrap:wrap;
-      margin:18px auto 0 auto;
-      padding:0 16px;
-      max-width:980px;
-    }
-
-    .btn{
-      display:inline-block;
-      text-decoration:none;
-      font-weight:700;
-      border-radius:8px;
-      padding:12px 16px;
-      font-size:14px;
-    }
-    .btn-home{
-      background:#ffffff;
-      color:#1b5e20;
-      border:2px solid #1b5e20;
-    }
-    .btn-wa{
-      background:#43a047;
-      color:#fff;
-      border:2px solid #43a047;
-    }
-
-    .wrap{
-      max-width:980px;
-      margin:0 auto;
-      padding:18px 16px 40px 16px;
-      text-align:center;
-    }
-
-    .card{
-      background:#ffffff;
-      border:1px solid #e6e6e6;
-      border-radius:14px;
-      box-shadow: 0 6px 18px rgba(0,0,0,0.06);
-      overflow:hidden;
-      margin-top:16px;
-      text-align:left;
-    }
-
-    .hero img{
-      width:100%;
-      height:auto;
-      display:block;
-      max-height:420px;
-      object-fit:cover;
-      background:#f2f2f2;
-    }
-
-    .content{
-      padding:18px 18px 6px 18px;
-    }
-
-    h2{
-      color:#2e7d32;
-      margin:18px 0 8px 0;
-      font-size:20px;
-      text-align:left;
-    }
-    p{
-      margin:0 0 10px 0;
-      text-align:left;
-    }
-    ul{
-      margin:8px 0 14px 20px;
-      padding:0;
-      text-align:left;
-    }
-    .note{
-      background:#f3fff4;
-      border-left:6px solid #43a047;
-      padding:12px 12px;
-      border-radius:10px;
-      margin:14px 0;
-    }
-    .warning{
-      background:#fff6f6;
-      border-left:6px solid #c62828;
-      padding:12px 12px;
-      border-radius:10px;
-      margin:14px 0;
-    }
-
-    .footer-actions{
-      text-align:center;
-      padding:0 18px 18px 18px;
-    }
-
-    footer{
-      background:#2e7d32;
-      color:#fff;
-      text-align:center;
-      padding:18px 12px;
-      margin-top:26px;
-      font-size:13px;
-    }
-  </style>
+<style>
+body { margin:0; font-family:Arial, Helvetica, sans-serif; background:#ffffff; color:#1b1b1b; }
+header { background:#1b5e20; color:white; padding:25px; text-align:center; }
+header h2 { margin:0; }
+header p { margin:6px 0 0 0; opacity:0.95; }
+.section { max-width:900px; margin:auto; padding:40px 20px; line-height:1.7; }
+.section h1 { color:#2e7d32; text-align:center; }
+.section h2 { color:#2e7d32; margin-top:30px; }
+img { width:100%; max-width:550px; border-radius:12px; display:block; margin:20px auto; }
+.button { background:#43a047; color:white; padding:15px 25px; text-decoration:none; font-weight:bold; border-radius:5px; display:inline-block; margin-top:20px; }
+.back { display:inline-block; margin-top:22px; color:#2e7d32; text-decoration:none; font-weight:bold; }
+footer { background:#2e7d32; color:white; text-align:center; padding:20px; margin-top:40px; }
+</style>
 </head>
 
 <body>
-  <header>
-    <h1>Pulga</h1>
-    <p>Bugs Or Us PR • Sección Educativa</p>
-  </header>
+<header>
+  <h2>Bugs Or Us PR</h2>
+  <p>Exterminador Javier Ortiz</p>
+</header>
 
-  <div class="top-actions">
-    <a class="btn btn-home" href="../index.html">← Volver al Inicio</a>
-    <a class="btn btn-wa" href="https://wa.me/17872099681" target="_blank" rel="noopener">
-      Solicitar Servicio por WhatsApp
-    </a>
-  </div>
+<section class="section">
 
-  <main class="wrap">
-    <div class="card">
-      <div class="hero">
-        <!-- Imagen en la raíz junto a index.html -->
-        <img src="../pulga.png" alt="Pulga (macro)" />
-      </div>
+<h1>Pulgas</h1>
 
-      <div class="content">
-        <h2>¿Qué es y por qué aparece?</h2>
-        <p>
-          Las <strong>pulgas</strong> son insectos pequeños que se alimentan de sangre y viven principalmente en
-          <strong>mascotas</strong> (perros y gatos). El problema en la casa no es solo el animal:
-          gran parte del ciclo ocurre en el ambiente (huevos, larvas y pupas) escondido en
-          <strong>alfombras, grietas, camas de mascotas, muebles</strong> y rincones.
-        </p>
+<img src="../pulga.png" alt="Pulga">
 
-        <div class="warning">
-          <p><strong>Lo que mucha gente no sabe:</strong> aunque “solo veas 1 o 2 pulgas”, puede haber
-          <strong>muchos más</strong> huevos y larvas en la casa. Por eso, el problema suele regresar si no se trata completo.</p>
-        </div>
+<h2>Descripción</h2>
+<p>
+Las pulgas son insectos pequeños sin alas que se alimentan de sangre. En Puerto Rico,
+son comunes en hogares con mascotas (perros y gatos), pero también pueden afectar a personas
+cuando la infestación es alta.
+</p>
 
-        <h2>Cómo identificarla</h2>
-        <ul>
-          <li>Muy pequeña y oscura; se mueve rápido.</li>
-          <li>Salta (por patas traseras fuertes).</li>
-          <li>En mascotas: se ve más en cuello, lomo, base de la cola y barriga.</li>
-        </ul>
+<h2>¿Por qué son un problema?</h2>
+<ul>
+  <li>Picaduras y comezón intensa.</li>
+  <li>Irritación de piel y alergias (especialmente en mascotas).</li>
+  <li>En infestaciones severas, pueden afectar el descanso y la calidad de vida.</li>
+</ul>
 
-        <h2>Señales típicas en mascotas</h2>
-        <ul>
-          <li>Rascarse o morderse repetidamente.</li>
-          <li>Puntos negros como “pimienta” en el pelo (a veces es “suciedad de pulga”).</li>
-          <li>En perros sensibles: <strong>dermatitis alérgica</strong> (enrojecimiento, costras, pérdida de pelo).</li>
-        </ul>
+<h2>¿Dónde se esconden?</h2>
+<ul>
+  <li>En mascotas (especialmente cuello, lomo y base de la cola).</li>
+  <li>En camas de mascotas, alfombras, sillones y grietas del piso.</li>
+  <li>Huevos/larvas pueden estar en el ambiente aunque no veas pulgas adultas.</li>
+</ul>
 
-        <h2>Señales en el hogar</h2>
-        <ul>
-          <li>Picadas pequeñas en tobillos o piernas (especialmente al estar cerca del suelo).</li>
-          <li>Presencia de pulgas en cama de mascotas, sofá o alfombras.</li>
-          <li>Actividad que “va y viene” (por pupas que eclosionan en oleadas).</li>
-        </ul>
+<h2>Prevención</h2>
+<ul>
+  <li>Mantener las mascotas con control antipulgas recomendado por su veterinario.</li>
+  <li>Lavar cama de mascotas y textiles con frecuencia.</li>
+  <li>Aspirar alfombras y muebles (desechar la bolsa/limpiar depósito).</li>
+  <li>Reducir presencia de roedores y animales callejeros cerca del hogar.</li>
+</ul>
+<p style="font-size: 0.95em;">
+Tip importante: la prevención en mascotas y el manejo del ambiente son claves para cortar el ciclo. 1
+</p>
 
-        <h2>Riesgos principales</h2>
-        <p>
-          Además de la picazón y alergias, las pulgas pueden causar
-          <strong>anemia en cachorros</strong> cuando hay muchas, y pueden estar asociadas a
-          <strong>parásitos intestinales</strong> en mascotas si se ingieren accidentalmente durante el acicalamiento.
-        </p>
+<h2>Control profesional</h2>
+<p>
+El control efectivo suele requerir tratar el ambiente (no solo la mascota) y romper el ciclo
+de huevos/larvas/pupas. En <strong>Bugs Or Us PR</strong> evaluamos el nivel de infestación,
+aplicamos tratamientos dirigidos y orientamos medidas preventivas para reducir el riesgo de reinfestación,
+priorizando siempre la seguridad de su familia, sus mascotas y el medio ambiente.
+</p>
 
-        <div class="note">
-          <p><strong>Importante:</strong> si tu mascota tiene pulgas, lo ideal es atender también
-          su plan preventivo con un producto recomendado por su veterinario.</p>
-        </div>
+<a class="button" href="https://wa.me/17872099681" target="_blank">Solicitar Servicio Profesional</a>
+<br>
+<a class="back" href="../index.html">← Volver al Inicio</a>
 
-        <h2>Prevención (lo que más funciona)</h2>
-        <ul>
-          <li><strong>Control en mascotas</strong>: prevención mensual (collar/pipeta/tableta según recomendación).</li>
-          <li><strong>Lavar</strong> cama y mantas con agua caliente cuando sea posible.</li>
-          <li><strong>Aspirar</strong> alfombras, muebles y orillas (y botar el contenido fuera del hogar).</li>
-          <li><strong>Patio</strong>: mantener áreas secas, sin acumulación de hojas o lugares húmedos protegidos.</li>
-        </ul>
+</section>
 
-        <h2>¿Qué hacemos en Bugs Or Us PR?</h2>
-        <p>
-          Para control real de pulgas, recomendamos un enfoque completo:
-          <strong>mascota + interior + perímetro</strong>. Si solo se trata un punto, las pulgas vuelven por el ciclo
-          en el ambiente.
-        </p>
+<footer>
+© <span id="year"></span> Bugs Or Us PR. Todos los derechos reservados.
+</footer>
 
-        <div class="warning">
-          <p><strong>Seguridad:</strong> evita mezclar químicos o usar “remedios caseros” fuertes sobre mascotas.
-          Algunos son peligrosos. Si quieres, nos escribes y te orientamos con un plan seguro.</p>
-        </div>
-      </div>
-
-      <div class="footer-actions">
-        <a class="btn btn-wa" href="https://wa.me/17872099681" target="_blank" rel="noopener">
-          Hablar por WhatsApp
-        </a>
-        &nbsp;&nbsp;
-        <a class="btn btn-home" href="../index.html">← Volver al Inicio</a>
-      </div>
-    </div>
-  </main>
-
-  <footer>
-    © 2026 Bugs Or Us PR • Javier Ortiz (Lic. #7713) • Cert. Agricultura #2018-C-14143
-  </footer>
+<script>
+document.getElementById("year").textContent = new Date().getFullYear();
+</script>
 </body>
 </html>
