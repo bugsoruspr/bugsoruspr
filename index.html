@@ -359,6 +359,99 @@ footer {
   line-height:1.2;
 }
 
+  /* ===== MENÚ HAMBURGUESA ===== */
+.menu-btn{
+  position:absolute;
+  top:16px;
+  left:16px;
+  width:46px;
+  height:46px;
+  border:none;
+  border-radius:12px;
+  background: rgba(255,255,255,0.75);
+  backdrop-filter: blur(6px);
+  cursor:pointer;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:5px;
+  z-index: 10001;
+}
+
+.menu-btn .bar{
+  width:20px;
+  height:2px;
+  background: var(--text);
+  border-radius: 999px;
+  display:block;
+}
+
+.menu-overlay{
+  position:fixed;
+  inset:0;
+  background: rgba(0,0,0,0.35);
+  display:none;
+  z-index: 10000;
+}
+
+.side-menu{
+  position:fixed;
+  top:0;
+  left:0;
+  height:100vh;
+  width: 290px;
+  max-width: 85vw;
+  background:#ffffff;
+  border-right: 1px solid var(--border);
+  transform: translateX(-105%);
+  transition: transform .25s ease;
+  z-index: 10002;
+  padding: 18px;
+  display:flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.side-menu.open{ transform: translateX(0); }
+.menu-overlay.open{ display:block; }
+
+.side-menu .menu-title{
+  font-weight: 800;
+  color: var(--green-3);
+  margin: 8px 0 6px 0;
+  font-size: 16px;
+}
+
+.side-menu a{
+  text-decoration:none;
+  color: var(--text);
+  font-weight: 700;
+  padding: 12px 12px;
+  border-radius: 12px;
+  background: var(--soft);
+  border: 1px solid var(--border);
+  display:block;
+}
+
+.side-menu a:hover{
+  background: #e9f7ec;
+}
+
+.side-menu .menu-close{
+  margin-left:auto;
+  border:none;
+  background: transparent;
+  font-size: 22px;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+}
+
+.side-menu .menu-close:hover{
+  background: #f1f1f1;
+}
+
 </style>
 
 <!-- STRUCTURED DATA: NEGOCIO -->
