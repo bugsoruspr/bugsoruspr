@@ -397,30 +397,34 @@ footer {
 
 .side-menu{
   position:fixed;
-  top:0;
-  left:0;
-  height:100vh;
-  width: 260px;
-  max-width: 85vw;
+  top:12px;
+  left:12px;
+  width:260px;
+  max-width:85vw;
   background:#ffffff;
-  border-right: 1px solid var(--border);
+  border:1px solid var(--border);
+  border-radius:18px;
   transform: translateX(-105%);
   transition: transform .25s ease;
-  z-index: 10002;
-  padding: 14px;
+  z-index:10002;
+  padding:16px;
   display:flex;
-  flex-direction: column;
-  gap: 8px;
+  flex-direction:column;
+  gap:8px;
+  max-height: calc(100vh - 24px);
+  overflow:auto;
 }
 
 .side-menu.open{ transform: translateX(0); }
 .menu-overlay.open{ display:block; }
 
 .side-menu .menu-title{
-  font-weight: 800;
+  font-weight: 900;
   color: var(--green-3);
-  margin: 8px 0 6px 0;
-  font-size: 14px;
+  font-size: 20px;
+  padding: 6px 0 10px 0;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 10px;
 }
 
 .side-menu a{
