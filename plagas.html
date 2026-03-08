@@ -302,7 +302,7 @@ Le ayudará a identificar señales, riesgos y cuándo puede ser recomendable una
 </section>
 
 <footer>
-© 2026 Bugs Or Us PR
+© <span id="year"></span> Bugs Or Us PR. Todos los derechos reservados.
 </footer>
 
 <script>
@@ -326,6 +326,10 @@ menuBtn.addEventListener('click',openMenu);
 menuClose.addEventListener('click',closeMenu);
 menuOverlay.addEventListener('click',closeMenu);
 
+</script>
+
+<script>
+document.getElementById("year").textContent = new Date().getFullYear();
 </script>
 
 </body>
